@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Books </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>📚 Book List</h1>
+    <p>This is the home page of Book API</p>
+     <% books.forEach(book =>{ %>
+   <div>
+    <h3 class="id">ID: <%= book.id %></h3>
+    <h4 class="title">Title:<%= book.title %></h4>
+    <h4 class="author">Author: <%= book.author %></h4>
+    <br>
+    <a href="/books/<%=book.id%>">See in Detail</a>
+    <a href="/books/<%=book.id%>/edit">Edit</a>
+    <br><br>
+    <form method="post" action="/books/<%=book.id%>?_method=DELETE">
+    <button>Delete Book</button>
+    </form>
+   </div>
+   <hr>
+    <% }) %>
+ <br>
+ <a href="/books/new">➕ Add New Book</a>
+</body>
+</html>

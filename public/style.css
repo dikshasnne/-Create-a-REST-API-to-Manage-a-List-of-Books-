@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(238, 238, 79);
+    padding:20px ;
+    text-align: center;
+}
+
+h1 {
+  color: #3454e4;
+}
+
+.id{
+    color: #555;
+}
+.title{
+    color: rgb(61, 148, 3);
+    font-style: italic;
+}
+
+.author{
+    color: rgb(182, 5, 5);
+}
